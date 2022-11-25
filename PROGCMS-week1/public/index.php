@@ -5,5 +5,3 @@ echo "Included";
 
 include "CMS/start/voorbeeldrequired.php";
 echo "Required";
-
-
