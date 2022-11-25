@@ -1,7 +1,7 @@
 <?php include "../private/shared/header.php"; ?>
 
 <h1>
-  Standaard tekst
+    Standaard tekst
 </h1>
 
 <?php include "../private/shared/footer.php"; ?>

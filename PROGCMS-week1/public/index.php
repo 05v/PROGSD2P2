@@ -1,7 +1,4 @@
 <?php
-
-include "CMS/start/voorbeeldinclude.php";
-echo "Included";
-
-include "CMS/start/voorbeeldrequired.php";
-echo "Required";
+include "../private/voorbeeldinclude.php";
+include "../private/voorbeeldrequired.php";
+include "startpagina.php";
