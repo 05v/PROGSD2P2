@@ -1,6 +1,5 @@
-<?php include "../private/voorbeeldinclude.php"; ?>
 <!DOCTYPE html>
-<link rel="stylesheet" href="media/style.css" />
+<link rel="stylesheet" href="<?php include CONTENTBEHEER_DIRECTORY . "/style.css" ?>" />
 <html lang="en">
 
 <head>
@@ -10,16 +9,14 @@
 
 <body>
     <header>
-        <?php include "../private/shared/header.php"; ?>
+        <?php include SHARED_DIRECTORY . "/header.php"; ?>
     </header>
 
     <h2>Standaard tekst</h2>
 
     <footer>
-        <?php include "../private/shared/footer.php"; ?>
+        <?php include SHARED_DIRECTORY . "/footer.php"; ?>
     </footer>
 </body>
-
-<?php include "../private/voorbeeldrequired.php"; ?>
 
 </html>
