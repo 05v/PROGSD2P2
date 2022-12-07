@@ -11,10 +11,15 @@
 
 <?php
 if (isset($_POST['submit'])) {
-    $data = $_POST;
-    $data = array_map('trim', $data);
-    $data = array_map('htmlspecialchars', $data);
-    $data = array_map('stripslashes', $data);
+
+    $name = stripslashes(htmlspecialchars($_POST['name']));
+    $email = stripslashes(htmlspecialchars($_POST['email']));
+    $comment = stripslashes(htmlspecialchars($_POST['comment']));
+
+    $data = array($name, $email, $comment);
+    // $data = trim($data[0]);
+    // $data = trim($data[1]);
+    // $data = trim($data[2]);
 
     foreach ($data as $key => $value) {
         if (!isset($value) || empty($value)) {
@@ -22,8 +27,8 @@ if (isset($_POST['submit'])) {
         }
     }
 
-    echo "Naam: " . $data['name'] . "<br>";
-    echo "E-mail: " . $data['email'] . "<br>";
-    echo "Commentaar: " . $data['comment'] . "<br>";
+    echo "Naam: " . $data[0] . "<br>";
+    echo "E-mail: " . $data[1] . "<br>";
+    echo "Commentaar: " . $data[2] . "<br>";
 }
 ?>
