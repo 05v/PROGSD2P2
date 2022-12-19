@@ -1,8 +1,11 @@
-<?php include 'private/init.php'; ?>
+<?php include '../../private/init.php'; ?>
 <?php include SHARED_DIRECTORY . '/header.php'; ?>
 <h1>
     Blogs
 </h1>
+
+<?php include CONTENTBEHEER_DIRECTORY . '/form.php'; ?>
+
 <?php
 lees_bestand('blogs.txt');
 bestands_check('blogs.txt');
